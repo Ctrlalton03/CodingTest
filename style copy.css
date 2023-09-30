@@ -1,0 +1,386 @@
+@font-face {
+  font-family: Friandise;
+  src: url(fonts/FriandiseNormalDemo.otf) format("OpenType");
+}
+@font-face {
+  font-family: Prestige;
+  src: url(fonts/Prestige\ Signature\ Serif\ -\ Demo.ttf);
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.header{
+  background-image: url(pictures/Main-Background.png);
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  font-family: "friandise" ;
+  font-size: 14px ;
+}
+
+.navbar a {
+  color: darkgoldenrod;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+
+.home-content{
+  display: grid;
+  width: 100%;
+}
+
+.Big-Header{
+  text-wrap: nowrap;
+  position: relative;
+  text-align: center;
+  top: 260px;
+  font-family: "prestige";
+  font-size: 50px;
+  padding: 10px 10px 10px 10px;
+  color: #d68d3b;
+  text-shadow: #000000 3px 5px 2px;
+}
+
+.Sub-Header{
+  text-wrap: nowrap;
+  position: relative;
+  text-align: center;
+  top: 200px;
+  font-family: "prestige";
+  font-size: 20px;
+  padding: 10px 10px 10px 10px;
+  color: beige;
+  text-shadow: #000000 3px 5px 2px;
+}
+
+
+.Golden-retreat-logo{
+  display: none;
+}
+
+#Heading-page1{
+    font-family: "friandise";
+    font-size: 30px;
+    text-align: center;
+    color: #283618;
+}
+
+.Activity-content{
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1000px) {
+  .background-image {
+    background-image: url(pictures/Main-Background.png);
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  
+  
+  .header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "friandise";
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  .navbar a {
+    color: darkgoldenrod;
+    text-decoration: none;
+    transition: 0.3s;
+  }
+  
+  .navbar a:hover {
+    color: white;
+  }
+  
+  .home {
+    font-family: "prestige";
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .home-content {
+    white-space: nowrap;
+    width: 100%;
+  }
+  
+  .home-content h1 {
+    text-align: center;
+    
+    font-size: 140px;
+    color: darkgoldenrod;
+    text-shadow: #000000 3px 5px 2px;
+  }
+  
+  .home-content p {
+    text-align: center;
+    position: relative;
+    top: -125px;
+    font-size: 50px;
+    color: purple;
+    text-shadow: #000000 3px 5px 2px;
+  }
+  
+  .Activity-content {
+    color: black;
+    width: 100%;
+  }
+  .Activity-images-container {
+    display: flex;
+    justify-content:space-around;
+    
+  }
+  
+  .Activity-images-container img {
+    width: 100%;
+    height: 100%;
+    filter: drop-shadow(20px 10px 4px #00000033);
+    object-fit: cover;
+    transition: transform 0.8s;
+  
+  }
+  
+  .Activity-images-container img:hover {
+    transform: scale(1.1);
+    filter: brightness(50%);
+    cursor: pointer;
+  }
+  
+  .Golden-retreat-logo {
+    font-family: "friandise";
+    text-decoration: none;
+    color: #d68d3b;
+    position: relative;
+    top: 30px;
+    left: 2%;
+  }
+  
+  #Heading-page1 {
+    font-family: "friandise";
+    font-size: 71px;
+    text-align: center;
+    color: #283618;
+  }
+  
+  #Activity-context {
+    
+    font-family: "prestige";
+    font-size: 27px;
+    position: relative;
+    top: 40px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    
+    padding:50px;
+    
+  }
+  
+  
+  .Learn-more-button-container{
+    text-align: center;
+  
+  }
+  
+  .btn{
+    border: 1.5px solid #606C38 ;
+    background: none;
+    padding: 20px 40px 20px 40px;
+    font-family: "prestige";
+    font-size: 25px;
+    cursor: pointer;
+    margin: 50px;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    filter: drop-shadow( 20px 10px 4px #00000033);
+  }
+  
+  .btn1{
+    color:#606C38;
+  }
+  
+  .btn1:hover{
+    color: white;
+  }
+  
+  .btn::before{
+    content: "";
+    position: absolute;
+    left:0;
+    width: 100%;
+    height: 0%;
+    background: #606C38;
+    z-index: -1;
+    transition: 0.3s;
+  }
+  
+  .btn1::before{
+    top: 0;
+    border-radius: 0 0 50% 50%;
+  }
+  
+  .btn1:hover::before{
+    height: 180%;
+  }
+  
+  
+  .Header-Rooms{
+    color: #283618;
+    font-family: "friandise";
+    font-size: 85px;
+    text-align: center;
+  }
+  
+  .Room-images{
+    margin: 0 auto;
+    height: 400px;
+    width: 100%;
+    display: inline-block;
+   text-align: center;
+   
+  }
+  
+  .Room-images img{
+    filter: drop-shadow(20px 10px 4px #00000033);
+    margin: 20px;
+    transition: 0.7s;
+  
+  }
+  
+  .Room-images img:hover{
+    transform: scale(1.1);
+  }
+  
+  
+  .Room-Content-container{
+    margin: 30px;
+    text-align: center
+    
+  }
+  
+  .Room-Content-container p{
+    font-family:"prestige";
+    font-size: 27px;
+    color: black;
+    text-align: center;
+  
+  }
+  
+  .Explore-Our-Rooms-container{
+    text-align: center;
+  }
+  
+  
+  
+  @media screen and (max-width: 480px){
+    .background-image {
+      background-image: url(pictures/Main-Background.png);
+      height: 100vh;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  
+  
+    .home-content h1 {
+      text-align: center;
+      width: 100%;
+      font-size: 4.9vh;
+      color: darkgoldenrod;
+      text-shadow: #000000 3px 5px 2px;
+    }
+    
+    .home-content p {
+      text-align: center;
+      position: relative;
+      top: -125px;
+      font-size: 2.9vh;
+      color: beige;
+      text-shadow: #000000 3px 5px 2px;
+    }
+    
+    
+  
+  
+    .Activity-images-container {
+      margin: 0 auto;
+      height: 400px;
+      width: 100%;
+      flex-direction: column;
+      
+    }
+    
+    .Activity-images-container img {
+      width: 100%;
+      height: 100%;
+      filter: drop-shadow(20px 10px 4px #00000033);
+      object-fit: cover;
+      transition: transform 0.8s;
+    
+    }
+    
+    .Activity-images-container img:hover {
+      transform: scale(1.1);
+      filter: brightness(50%);
+      cursor: pointer;
+    }
+  }
+}
